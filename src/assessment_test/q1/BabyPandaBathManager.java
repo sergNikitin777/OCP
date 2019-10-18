@@ -6,6 +6,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.stream.IntStream;
 
+//What is the result of executing the following application? (Choose all that apply.)
+
 public class BabyPandaBathManager {
     public static void await(CyclicBarrier cb) {
         try {
@@ -25,3 +27,12 @@ public class BabyPandaBathManager {
         service.shutdown();
     }
 }
+
+//        A.     It outputs Clean! at least once.
+//        B.     It outputs Clean! four times.
+//        C.     The code will not compile because of line u1.
+//        D.     The code will not compile because of line u2.
+//        E.     The code will not compile because of line u3.
+//        F.     The code will not compile because of line u4.
+//        G.     It compiles but throws an exception at runtime.
+//       +H.     It compiles but waits forever at runtime.
