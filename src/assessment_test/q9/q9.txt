@@ -1,0 +1,10 @@
+9. Which of the following can fill in the blank? (Choose all that apply.)
+public void stmt(Connection conn, int a) throws SQLException {
+ Statement stmt = conn.createStatement(a, __________________________);
+}
+*A. ResultSet.CONCUR_READ_ONLY
+B. ResultSet.CONCUR_INSERTABLE
+*C. ResultSet.CONCUR_UPDATABLE
+D. ResultSet.TYPE_FORWARD_ONLY
+E. ResultSet.TYPE_SCROLL_INSENSITIVE
+F. ResultSet.TYPE_SCROLL_SENSITIVE

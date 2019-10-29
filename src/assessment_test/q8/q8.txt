@@ -1,0 +1,15 @@
+public class Tail {}
+public class Animal {
+ public String name;
+}
+public class Canine extends Animal {
+ public Tail tail;
+}
+public class Wolf extends Canine {}
+
+*A. Wolf has-a name.
+*B. Wolf has-a Tail.
+C. Wolf is-a Tail.
+*D. Wolf is-a Animal.
+E. Canine is-a Wolf.
+F. Animal has-a Tail.
