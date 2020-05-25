@@ -10,7 +10,7 @@ class Person {
     public String toString() { return name; }
 }
 
-public class Helper {
+class Helper {
 
     public void helpPeople(Queue people, Queue helped) {
         do {

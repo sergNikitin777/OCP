@@ -13,7 +13,7 @@ public class AssesmentTestQ4 {
         birds.addAll(source);
         synchronized(new Integer(10)) {
             for(Integer f: fish) fish.add(4); // c1
-            for(Integer m: mammals) mammals.add(4); // c2
+            //for(Integer m: mammals) mammals.add(4); // c2 java.util.ConcurrentModificationException
             for(Integer b: birds) birds.add(5); // c3
             System.out.println(fish.size()+" "+mammals.size()+" "+birds.size());
         }
