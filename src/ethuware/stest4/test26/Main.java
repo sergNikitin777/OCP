@@ -20,6 +20,9 @@ public class Main {
 
         System.out.print(letters.stream().map(e->e.toUpperCase()).collect(Collectors.joining()));
 
+        System.out.print(letters.stream().collect(Collectors.joining()).toUpperCase());
+
+
 
     }
 }

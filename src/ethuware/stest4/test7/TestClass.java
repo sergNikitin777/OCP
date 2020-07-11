@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class TestClass {
@@ -22,5 +23,11 @@ public class TestClass {
         //System.out.println(count1+" "+count2); //7
 //        primeStream.collect(Collectors.partitioningBy(test1, Collectors.counting()))
 //                .values().forEach(System.out::print);
+
+        long count1 = primes.stream().filter(test1).count();//4
+
+        long count2 = primes.stream().filter(test2).count();//6
+
+        System.out.println(count1+" "+count2); //7
     }
 }

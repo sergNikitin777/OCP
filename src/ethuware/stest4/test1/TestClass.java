@@ -1,6 +1,5 @@
 package ethuware.stest4.test1;
 
-import java.sql.ResultSet;
 import java.util.Arrays;
 import java.util.List;
 
@@ -18,7 +17,10 @@ public class TestClass {
 
         System.out.println(sum);
 
-        ResultSet rs;
+        //double sum = 0;
+        //ls.stream().forEach(a->{ sum=sum+a; });
+
+        //ls.stream().peek(x->{sum=sum+x;}).forEach(y->{});
 
     }
 }

@@ -34,8 +34,11 @@ public class TestClass {
                 new Course("OCEJPA", "Java")
         );
 
+        System.out.println(s1);
+
         s1.stream()
                 .collect(Collectors.groupingBy(c->c.getCategory()))
-                .forEach((m, n)->System.out.println(m+" -> "+n));
+                //.forEach((m, n)->System.out.println(m+" -> "+n));
+                .forEach((m, n)->System.out.println(n));
     }
 }
