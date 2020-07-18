@@ -1,7 +1,7 @@
 package ethuware.stest5.test5;
 
 import java.util.*;
-class Person implements Comparable {
+class Person /*implements Comparable*/ {
     private static int count = 0;
     private String id = "0"; private String interest;
     public Person(String interest){ this.interest = interest; this.id = "" + ++count; }
@@ -9,10 +9,10 @@ class Person implements Comparable {
     public void setInterest(String interest){ this.interest = interest; }
     public String toString(){ return id; }
 
-    @Override
-    public int compareTo(Object o) {
-        return 0;
-    }
+//    @Override
+//    public int compareTo(Object o) {
+//        return 0;
+//    }
 }
 
 public class StudyGroup
